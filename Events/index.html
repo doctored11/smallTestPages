@@ -108,6 +108,7 @@
       let btnForm = document.querySelector('.btn-primary');
       btnForm.addEventListener('click', addToFIOArr);
       function addToFIOArr() {
+        event.preventDefault();
         let buff = '';
         document.querySelectorAll('.form-control').forEach((element) => {
           buff += element.value + ' ';
